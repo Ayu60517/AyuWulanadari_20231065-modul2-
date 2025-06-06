@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #2196F3; /* biru untuk desktop */
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .judul {
+            text-align: center;
+            font-size: 32px;
+            color: white;
+            padding: 20px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .grid-item {
+            background-color: white;
+            color: #333;
+            padding: 20px;
+            font-size: 20px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        /* Media Query untuk layar ≤ 600px */
+        @media only screen and (max-width: 600px) {
+            body {
+                background-color: #f44336; /* merah untuk smartphone */
+            }
+
+            .judul {
+                font-size: 24px; /* lebih kecil untuk layar kecil */
+            }
+
+            .grid-container {
+                grid-template-columns: 1fr; /* hanya 1 kolom */
+            }
+
+            .grid-item {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="judul">Selamat Datang di Halaman Responsive Grid</div>
+
+    <div class="grid-container">
+        <div class="grid-item">Ayu</div>
+        <div class="grid-item">Mira</div>
+        <div class="grid-item">Nurita</div>
+    </div>
+</body>
+</html>
